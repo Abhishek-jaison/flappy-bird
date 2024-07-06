@@ -75,11 +75,11 @@ class _HomePageState extends State<HomePage> {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("Game Over"),
-          content: Text("Your Score: $score\nBest Score: $bestScore"),
+          title: Center(child: Text("Game Over")),
+          
           actions: <Widget>[
             TextButton(
-              child: Text("Restart"),
+              child: Center(child: Text("Restart")),
               onPressed: () {
                 Navigator.of(context).pop();
                 restartGame();
